@@ -1,9 +1,12 @@
-# Notes for creating Django Starter Compare
+# Startup Notes for Django Starter Compare
 
 ## Information:
 * These process steps are being performed in a PowerShell terminal but most commands, I think, are compatible with several other terminal evironments.
 
-## Links and such:
+## Links:
+* [`README.md`](../README.md)
+
+## Useful commands and URL links:
 * `python .\manage.py runserver`
 * http://localhost:8000/
 
@@ -299,7 +302,15 @@
 
 1. Examine current directory structure:
     * NOTES:
-        * New [`the_app`](../the_app/) directory (with contents) added to project root.
+        * New [`the_app`](../the_app/) directory (with contents) added to project root:
+            * [`admin.py`](../the_app/admin.py)
+            * [`apps.py`](../the_app/apps.py)
+            * [`models.py`](../the_app/models.py)
+            * [`tests.py`](../the_app/tests.py)
+            * [`views.py`](../the_app/views.py)
+            * [`__init__.py`](../the_app/__init__.py)
+            * [`migrations`](../the_app/migrations/)
+                * [`__init__.py`](../the_app/migrations/__init__.py)
         * New `db.sqlite3` shows up now since we started the development server in an earlier step.
     * `tree /f /a`
         * Sample output:
