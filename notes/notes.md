@@ -3,6 +3,11 @@
 ## Information:
 * These process steps are being performed in a PowerShell terminal but most commands, I think, are compatible with several other terminal evironments.
 
+## Links and such:
+* `python .\manage.py runserver`
+* http://localhost:8000/
+
+
 ## Process:
 
 1. Start in root of repository:
@@ -247,9 +252,87 @@
             ```
 
 1. Test development server:
-    * ``
+    * `python .\manage.py runserver`
         * Sample output:
             ```
+            PS C:\Users\Bruce\Programming\django-starter-compare> python .\manage.py runserver
+            Watching for file changes with StatReloader
+            Performing system checks...
 
+            System check identified no issues (0 silenced).
+
+            You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+            Run 'python manage.py migrate' to apply them.
+            August 26, 2022 - 08:16:43
+            Django version 4.0, using settings 'the_project.settings'
+            Starting development server at http://127.0.0.1:8000/
+            Quit the server with CTRL-BREAK.
             ```
 
+1. Open internet browser to server address:
+    * NOTES:
+        * Author is using http://localhost:8000/ since since it usually maps to http://127.0.0.1:8000/ and is easier to link in notes.
+    * http://localhost:8000/
+
+1. Verify presence of Django Green Rocket and some text like the following:
+    * Sample text:
+        * `The install worked successfully! Congratulations!`
+    * Sample image:
+        * INSERT_DJANGO_GREEN_ROCKET_IMAGE_HERE
+
+1. Stop the development server:
+    * Keystroke, in terminal:
+        * `<Ctrl+C>`
+
+1. Create Django app:
+    * `python .\manage.py startapp the_app`
+        * Sample output:
+            ```
+            PS C:\Users\Bruce\Programming\django-starter-compare> python .\manage.py startapp the_app
+            PS C:\Users\Bruce\Programming\django-starter-compare>
+            ```
+
+1. Examine current directory structure:
+    * NOTES:
+        * New [`the_app`](../the_app/) directory (with contents) added to project root.
+        * New `db.sqlite3` shows up now since we started the development server in an earlier step.
+    * `tree /f /a`
+        * Sample output:
+            ```
+            PS C:\Users\Bruce\Programming\django-starter-compare> tree /f /a
+            Folder PATH listing for volume OS
+            Volume serial number is CC00-DD12
+            C:.
+            |   .gitignore
+            |   db.sqlite3
+            |   LICENSE
+            |   manage.py
+            |   Pipfile
+            |   Pipfile.lock
+            |   README.md
+            |
+            +---notes
+            |       notes.md
+            |
+            +---the_app
+            |   |   admin.py
+            |   |   apps.py
+            |   |   models.py
+            |   |   tests.py
+            |   |   views.py
+            |   |   __init__.py
+            |   |
+            |   \---migrations
+            |           __init__.py
+            |
+            \---the_project
+                    asgi.py
+                    settings.py
+                    urls.py
+                    wsgi.py
+                    __init__.py
+
+            PS C:\Users\Bruce\Programming\django-starter-compare>
+            ```
+
+1. This concludes the creation of the Django Starter Compare. This repo can be used to compare the state of a project that has had application functionality added.
