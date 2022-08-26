@@ -223,7 +223,12 @@
 1. Examine current directory structure:
     * NOTES:
         * New [`manage.py`](../manage.py) file added to project root.
-        * New [`the_project`](../the_project/) directory (with contents) added to project root.
+        * New [`the_project`](../the_project/) directory (with contents) added to project root:
+            * [`asgi.py`](../the_project/asgi.py)
+            * [`settings.py`](../the_project/settings.py)
+            * [`urls.py`](../the_project/urls.py)
+            * [`wsgi.py`](../the_project/wsgi.py)
+            * [`__init__.py`](../the_project/__init__.py)
     * `tree /f /a`
         * Sample output:
             ```
