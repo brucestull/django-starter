@@ -351,7 +351,7 @@
             PS C:\Users\Bruce\Programming\django-starter-compare>
             ```
 
-1. Add and entry for the `AppConfig` of our app `the_app` to the `INSTALLED_APPS` part of [`the_project/settings.py`](../the_project/settings.py):
+1. Add an entry for the `AppConfig` of our app `the_app` to the `INSTALLED_APPS` part of [`the_project/settings.py`](../the_project/settings.py):
     <details>
     <summary>Sample addition to <code>INSTALLED_APPS</code> implementation:</summary>
 
