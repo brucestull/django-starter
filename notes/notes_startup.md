@@ -351,4 +351,15 @@
             PS C:\Users\Bruce\Programming\django-starter-compare>
             ```
 
+1. Add and entry for the `AppConfig` of our app `the_app` to the `INSTALLED_APPS` part of [`the_project/settings.py`](../the_project/settings.py):
+    <details>
+    <summary>Sample addition to <code>INSTALLED_APPS</code> implementation:</summary>
+
+        INSTALLED_APPS = [
+            #...
+            'the_app.apps.TheAppConfig',
+            #...
+        ]
+    </details>
+
 1. This concludes the creation of the Django Starter Compare. This repo can be used to compare the state of a project that has had application functionality added.
