@@ -1,5 +1,4 @@
-#
-
+# Execute `pipenv shell` Below Root Directory
 
 <details>
 <summary><code>git status</code></summary>
