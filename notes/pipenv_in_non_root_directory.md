@@ -172,24 +172,14 @@
     PS C:\Users\Bruce\Programming\FlynntKnapp-django-starter-compare>
 </details>
 
-
-
-
-
 <details>
-<summary><code></code></summary>
+<summary><code>Get-Command python</code></summary>
 
-CONTENT
-</details>
+    PS C:\Users\Bruce\Programming\FlynntKnapp-django-starter-compare> Get-Command python
 
-<details>
-<summary><code></code></summary>
+    CommandType     Name                                               Version    Source
+    -----------     ----                                               -------    ------
+    Application     python.exe                                         3.10.6150… C:\Users\Bruce\.virtualenvs\FlynntKnapp-django-starter-compare-sQJBsmvc\Scripts\python.exe
 
-CONTENT
-</details>
-
-<details>
-<summary><code></code></summary>
-
-CONTENT
+    PS C:\Users\Bruce\Programming\FlynntKnapp-django-starter-compare>
 </details>
