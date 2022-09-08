@@ -4,7 +4,7 @@
 * These process steps are being performed in a PowerShell terminal but most commands, I think, are compatible with several other terminal evironments.
 
 ## Links:
-* [`README.md`](../README.md)
+* [`django-starter-compare` repository `README.md`](../README.md)
 
 ## Useful commands and URL links:
 * `python .\manage.py runserver`
