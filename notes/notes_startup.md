@@ -1,4 +1,4 @@
-# Startup Notes for Django Starter Compare
+# How to create this `django-starter-compare` repository
 
 ## Information:
 * These process steps are being performed in a PowerShell terminal but most commands, I think, are compatible with several other terminal evironments.
@@ -30,7 +30,7 @@
             |   README.md
             |
             \---notes
-                    notes.md
+                    notes_startup.md
 
             PS C:\Users\Bruce\Programming\django-starter-compare>
             ```
@@ -92,7 +92,7 @@
             |   README.md
             |
             \---notes
-                    notes.md
+                    notes_startup.md
 
             PS C:\Users\Bruce\Programming\django-starter-compare>
             ```
@@ -130,10 +130,10 @@
             ```
 
 1. Verify our current terminal session is using the the virtual environment for `python`:
-    * `Get-Command python | fl *`
+    * `Get-Command python | Format-List *`
         * Sample output:
             ```
-            PS C:\Users\Bruce\Programming\django-starter-compare> Get-Command python | fl *
+            PS C:\Users\Bruce\Programming\django-starter-compare> Get-Command python | Format-List *
 
             HelpUri            :
             FileVersionInfo    : File:
@@ -175,10 +175,10 @@
         * `Path : C:\Users\Bruce\.virtualenvs\django-starter-compare-2tpqlLoP\Scripts\python.exe`
 
 1. Verify our current terminal session is using the the virtual environment for `django-admin`:
-    * `Get-Command django-admin | fl *`
+    * `Get-Command django-admin | Format-List *`
         * Sample output:
             ```
-            PS C:\Users\Bruce\Programming\django-starter-compare> Get-Command django-admin | fl *
+            PS C:\Users\Bruce\Programming\django-starter-compare> Get-Command django-admin | Format-List *
 
             HelpUri            :
             FileVersionInfo    : File:
@@ -247,7 +247,7 @@
             |   README.md
             |
             +---notes
-            |       notes.md
+            |       notes_startup.md
             |
             \---the_project
                     asgi.py
@@ -328,7 +328,7 @@
             |   README.md
             |
             +---notes
-            |       notes.md
+            |       notes_startup.md
             |
             +---the_app
             |   |   admin.py
@@ -352,14 +352,13 @@
             ```
 
 1. Add an entry for the `AppConfig` of our app `the_app` to the `INSTALLED_APPS` part of [`the_project/settings.py`](../the_project/settings.py):
-    <details>
-    <summary>Sample addition to <code>INSTALLED_APPS</code> implementation:</summary>
-
+    ```
         INSTALLED_APPS = [
             #...
             'the_app.apps.TheAppConfig',
             #...
         ]
-    </details>
+    ```
+
 
 1. This concludes the creation of the Django Starter Compare. This repo can be used to compare the state of a project that has had application functionality added.
