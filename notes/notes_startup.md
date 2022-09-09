@@ -1,19 +1,18 @@
-# How to create this `django-starter-compare` repository
+# Create the `django-starter-compare` project from an empty repository
+* The 'empty' repository contains only `git` related files and this `notes_startup.md` document.
+    * `.gitignore`
+    * `LICENSE`
+    * `README.md`
 
 ## Information:
-* These process steps are being performed in a PowerShell terminal but most commands, I think, are compatible with several other terminal evironments.
-
-## Links:
-* [`django-starter-compare` repository `README.md`](../README.md)
+* These process steps are being performed in a PowerShell terminal so some commands may be different in other terminal environments.
 
 ## Useful commands and URL links:
 * `python .\manage.py runserver`
 * http://localhost:8000/
 
-
 ## Process:
-
-1. Start in root of repository:
+1. Start in root or repository (the project root directory):
     * Sample location:
         * `C:\Users\Bruce\Programming\django-starter-compare\`
 
