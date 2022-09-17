@@ -1,5 +1,5 @@
 # Django Starter Compare
-Basic django starter, only includes the automatically generated Project `the_project` and App `the_app`. This will be used to compare what things have to be changed when making an actual app.
+Basic django starter, includes the automatically generated Project `the_project`, automatically generated App `the_app`, Django Admin Documentation Generater, and function-based `index` view. This will be used to compare what things have to be changed when making an actual app.
 
 ## Links:
 * [How to create this `django-starter-compare` repository](./notes/notes_startup.md)
