@@ -1,13 +1,16 @@
-# Django Starter Compare
-* Basic django starter, includes the automatically generated Project `the_project`, automatically generated App `the_app`, Django Admin Documentation Generater, and function-based `index` view. This will be used to compare what things have to be changed when making an actual app.
-* We will be comparing content across branches.
-    * Links will be provided to compare the content of the branches.
+# Django Starter
+* Basic django starter, includes the following:
+* An automatically generated Django Project: `the_project`
+* An automatically generated Django App: `the_app`
+* The Django Admin Documentation Generater: which uses `docutils`
+* A Django function-based view: `index`
+
 
 ## Resources:
 
 
 ## Links:
-* [How to create this `django-starter-compare` repository](#)
+* [How to create this `django-starter` repository](#)
 
 
 ## **IMPORTANT**
