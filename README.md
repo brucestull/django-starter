@@ -7,12 +7,15 @@
 * The Django Admin Documentation Generater: which uses `docutils`
 * `pipenv` settings files
 
+## Notes:
+* The author is using PowerShell for the terminal commands. User commands may be different than those used here.
+    * I hope to add some sort of documentation for the commands used in other terminal environments in the future.
 
 ## Resources:
 
 
 ## Links:
-* [How to create this `django-starter` repository](./notes/01_how_to_create_this_repository.md)
+
 
 
 ## **IMPORTANT**
