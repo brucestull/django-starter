@@ -7,7 +7,7 @@
 
 
 ## Links:
-* [How to create this `django-starter-compare` repository]()
+* [How to create this `django-starter-compare` repository](#)
 
 
 ## **IMPORTANT**
