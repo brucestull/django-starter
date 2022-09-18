@@ -141,7 +141,7 @@
 1. **ACTION:** Add an entry for the `AppConfig` of our app `the_app` to the `INSTALLED_APPS` attribute of [`the_project/settings.py`](../the_project/settings.py):
     * Our `AppConfig` is `TheAppConfig` in [`the_app/apps.py`](../the_app/apps.py).
         <details>
-        <summary>Sample <code>INSTALLED_APPS</code> contents addition in <code>the_project/settings.py</code>:</summary>
+        <summary>Sample addition to <code>INSTALLED_APPS</code> attribute in <code>the_project/settings.py</code>:</summary>
 
             INSTALLED_APPS = [
                 #...
