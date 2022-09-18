@@ -268,9 +268,9 @@
             * http://localhost:8000/admin/doc/models/
             * http://localhost:8000/admin/doc/models/auth.user/ 
 
-1. We now have a Django starter which has a basic Django Project and basic Django App. We will now add a simple `index` view for some useful links.
+1. **INFO:** We now have a Django starter which has a basic Django Project, basic Django App, and Django Admin Documentation Generator. We will now add a simple `index` view for some useful links.
 
-1. Proceed to [Add Django Index View](./06_add_django_index_view.md)
+1. **ACTION:** Proceed to [Add Django Index View](./06_add_django_index_view.md)
 
 
 ## Repository Links:
