@@ -6,6 +6,7 @@
 * `pipenv install`
 * `pipenv install django==4.0`
 * `pipenv install django==4.1`
+* `pipenv install docutils==0.19`
 * `pipenv shell`
 * `exit`
 

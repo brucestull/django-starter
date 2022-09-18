@@ -271,10 +271,7 @@
 
 1. We now have a Django starter which has a basic Django Project and basic Django App. We will now add a simple `index` view for some useful links.
 
-1. Proceed to []()
-
-
-
+1. Proceed to [Add Django Index View](./06_add_django_index_view.md)
 
 
 ## Repository Links:

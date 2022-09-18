@@ -27,4 +27,5 @@
 1. [Create `pipenv` Virtual Environment](./notes/02_create_virtual_environment.md)
 1. [Create a Django Project](./notes/03_create_django_project.md)
 1. [Create a Django App](./notes/04_create_django_app.md)
+1. [Add The Django Admin Documentation Generater](./notes/05_add_django_admin_documentation_generator.md)
 
