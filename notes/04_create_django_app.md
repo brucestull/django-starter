@@ -33,7 +33,7 @@
         </details>
 
         <details>
-        <summary>Sample output for if virtual environment is already active:</summary>
+        <summary>Sample output if virtual environment is already active:</summary>
 
             PS C:\Users\Bruce\Programming\django-starter> pipenv shell
             Shell for C:\Users\Bruce\.virtualenvs\django-starter-sM6xjp8- already activated.
