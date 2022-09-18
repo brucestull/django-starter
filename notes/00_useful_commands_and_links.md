@@ -7,6 +7,7 @@
 * `pipenv install django==4.0`
 * `pipenv install django==4.1`
 * `pipenv shell`
+* `exit`
 
 ### `pip`:
 * `pip list`
@@ -15,11 +16,11 @@
 * `django-admin startproject the_project .`
 * `python .\manage.py startapp the_app`
 * `python .\manage.py runserver`
+* `<Ctrl+C>`
 * `python .\manage.py makemigrations`
 * `python .\manage.py migrate`
 * `python .\manage.py createsuperuser`
 * `python .\manage.py createsuperuser --email admin@email.app --username admin`
-* `python .\manage.py runserver`
 
 
 ### PowerShell:
