@@ -138,10 +138,10 @@
     * Keystroke, in terminal:
         * `<Ctrl+C>`
 
-1. **ACTION:** Add an entry for the `AppConfig` of our app `the_app` to the `INSTALLED_APPS` attribute of [`the_project/settings.py`](../the_project/settings.py):
+1. **ACTION:** Add an entry for the `AppConfig` of our app `the_app` to the `INSTALLED_APPS` variable of [`the_project/settings.py`](../the_project/settings.py):
     * Our `AppConfig` is `TheAppConfig` in [`the_app/apps.py`](../the_app/apps.py).
         <details>
-        <summary>Sample addition to <code>INSTALLED_APPS</code> attribute of <code>the_project/settings.py</code>:</summary>
+        <summary>Sample addition to <code>INSTALLED_APPS</code> variable of <code>the_project/settings.py</code>:</summary>
 
             INSTALLED_APPS = [
                 #...

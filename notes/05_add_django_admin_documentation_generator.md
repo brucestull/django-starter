@@ -45,7 +45,7 @@
             PS C:\Users\Bruce\Programming\django-starter>
         </details>
 
-1. **ACTION:** Add an application `django.contrib.admindocs` to the `INSTALLED_APPS` attribute of [`the_project/settings.py`](../the_project/settings.py):
+1. **ACTION:** Add an application `django.contrib.admindocs` to the `INSTALLED_APPS` variable of [`the_project/settings.py`](../the_project/settings.py):
     <details>
     <summary>Sample <code>INSTALLED_APPS</code> contents in <code>the_project/settings.py</code>:</summary>
 
@@ -56,7 +56,7 @@
         ]
     </details>
 
-1. **ACTION:** Add a `path` (`urlpattern`) for the Django Admin Documentation Generator app to the `urlpatterns` attribute of [](../the_project/urls.py):
+1. **ACTION:** Add a `path` (`urlpattern`) for the Django Admin Documentation Generator app to the `urlpatterns` variable of [](../the_project/urls.py):
     * Add import for `include` from `django.urls`.
     * Add `path` function with following arguments:
         * route: `'admin/doc/'`
@@ -270,7 +270,7 @@
 
 1. **INFO:** We now have a Django starter which has a basic Django Project, basic Django App, and Django Admin Documentation Generator. We will now add a simple `index` view for some useful links.
 
-1. **ACTION:** Proceed to [Add Django Index View](./06_add_django_index_view.md)
+1. **ACTION:** Proceed to [Add Django Index View](./06_add_django_index_page.md)
 
 
 ## Repository Links:
