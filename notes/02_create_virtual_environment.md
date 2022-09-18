@@ -152,21 +152,19 @@
 1. **INFO:** Verify Django is installed by checking installed packages:
     * `pip list`
         * Sample output:
-            <details>
-            <summary>Sample output:</summary>
-
-                PS C:\Users\Bruce\Programming\django-starter> pip list
-                Package    Version
-                ---------- -------
-                asgiref    3.5.2
-                Django     4.0
-                pip        22.2.2
-                setuptools 65.1.1
-                sqlparse   0.4.2
-                tzdata     2022.2
-                wheel      0.37.1
-                PS C:\Users\Bruce\Programming\django-starter>
-            </details>
+            ```
+            PS C:\Users\Bruce\Programming\django-starter> pip list
+            Package    Version
+            ---------- -------
+            asgiref    3.5.2
+            Django     4.0
+            pip        22.2.2
+            setuptools 65.1.1
+            sqlparse   0.4.2
+            tzdata     2022.2
+            wheel      0.37.1
+            PS C:\Users\Bruce\Programming\django-starter>
+            ```
     * Note that there are significantly fewer packaged listed here than the globally installed packages.
 
 1. **INFO:** Verify our current terminal session is using the the virtual environment for `python`:
