@@ -270,7 +270,7 @@
 
 1. **INFO:** We now have a Django starter which has a basic Django Project, basic Django App, and Django Admin Documentation Generator. We will now add a simple `index` view for some useful links.
 
-1. **ACTION:** Proceed to [Add Django Index View](./06_add_django_index_page.md)
+1. **ACTION:** Proceed to [Add Index Page](./06_add_index_page.md)
 
 
 ## Repository Links:

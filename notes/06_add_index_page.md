@@ -1,4 +1,4 @@
-# Add Django Index Page
+# Add Index Page
 
 ## Resources:
 * [URL dispatcher - docs.djangoproject.com](https://docs.djangoproject.com/en/4.0/topics/http/urls/#url-dispatcher)
@@ -171,7 +171,10 @@
 
 1. **INFO:** We now have a basic Django project and application. That application has a webpage which has links to Django Admin Interface and Django Admin Documentation. This repository can be used to create new Django applications and compare the contents of the new application to this repository.
 
-1. Proceed to [Create a project to compare to this repository](./07_fork_this_repository.md)
+1. Create a project:
+    * Proceed to [Create a Project Fork to Compare to this Repository](./07f_fork_this_repository.md)
+    * **AND/OR**
+    * Proceed to [Clone this Repository](./07c_clone_this_repository.md)
 
 
 ## Repository Links:

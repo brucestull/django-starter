@@ -28,6 +28,6 @@
 1. [Create a Django Project](./notes/03_create_django_project.md)
 1. [Create a Django App](./notes/04_create_django_app.md)
 1. [Add The Django Admin Documentation Generater](./notes/05_add_django_admin_documentation_generator.md)
-1. [Add Django Index View](./notes/06_add_django_index_page.md)
-1. [Create a project to compare to this repository](./notes/07_fork_this_repository.md)
+1. [Add Django Index View](./notes/06_add_index_page.md)
+1. [Create a Project Fork to Compare to this Repository](./notes/07f_fork_this_repository.md)
 
