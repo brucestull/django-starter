@@ -4,6 +4,7 @@
 
 ### `pipenv`:
 * `pipenv install`
+* `pipenv install django==4.0`
 * `pipenv install django==4.1`
 * `pipenv shell`
 
