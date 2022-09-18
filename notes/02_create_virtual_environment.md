@@ -8,7 +8,6 @@
 
 ## `django-starter` Repository links:
 * Repository [`README.md`](../README.md)
-* Repository root directory: [`django-starter`](../)
 
 
 ## Tag meanings for this guide:
