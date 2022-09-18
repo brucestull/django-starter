@@ -173,7 +173,7 @@
 
 1. **INFO:** We now have a basic Django project and application. That application has a webpage which has links to Django Admin Interface and Django Admin Documentation. This repository can be used to create new Django applications and compare the contents of the new application to this repository.
 
-1. Proceed to [Start your own project by cloning this repository]
+1. Proceed to [Create a project to compare to this repository](./07_fork_this_repository.md)
 
 
 ## Repository Links:
