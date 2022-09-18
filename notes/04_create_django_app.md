@@ -152,7 +152,7 @@
 
 1. **INFO:** We now have a Django starter with a Django Project and a Django App. We will now add the Django Admin Documentation Generater. This application will allow viewing additional general information about Django as well as information specific to our additional application functionality.
 
-1. Proceed to [Add The Django Admin Documentation Generater]
+1. Proceed to [Add The Django Admin Documentation Generater](./05_add_django_admin_documentation_generator.md)
 
 
 ## Repository Links:
