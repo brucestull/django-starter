@@ -1,4 +1,4 @@
-# Create a Django Project
+# Create a Django App
 
 ## Resources:
 
@@ -42,12 +42,12 @@
             PS C:\Users\Bruce\Programming\django-starter>
         </details>
 
-1. **ACTION:** Create Django project `the_project`:
-    * `django-admin startproject the_project .`
+1. **ACTION:** Create Django app:
+    * `python .\manage.py startapp the_app`
         <details>
         <summary>Sample output:</summary>
 
-            PS C:\Users\Bruce\Programming\django-starter> django-admin startproject the_project .
+            PS C:\Users\Bruce\Programming\django-starter> python .\manage.py startapp the_app
             PS C:\Users\Bruce\Programming\django-starter>
         </details>
     
@@ -61,6 +61,7 @@
             Volume serial number is CC00-DD12
             C:.
             |   .gitignore
+            |   db.sqlite3
             |   LICENSE
             |   manage.py
             |   Pipfile
@@ -72,6 +73,18 @@
             |       01_how_to_create_this_repository.md
             |       02_create_virtual_environment.md
             |       03_create_django_project.md
+            |       04_create_django_app.md
+            |
+            +---the_app
+            |   |   admin.py
+            |   |   apps.py
+            |   |   models.py
+            |   |   tests.py
+            |   |   views.py
+            |   |   __init__.py
+            |   |
+            |   \---migrations
+            |           __init__.py
             |
             \---the_project
                     asgi.py
@@ -83,13 +96,13 @@
             PS C:\Users\Bruce\Programming\django-starter>
         </details>
     * NOTES:
-        * New file: `manage.py`
-        * New directory `the_project`:
-            * New files in `the_project`:
-                * `asgi.py`
-                * `settings.py`
-                * `urls.py`
-                * `wsgi.py`
+        * New directory `the_app`:
+            * New files in `the_app`:
+                * `admin.py`
+                * `apps.py`
+                * `models.py`
+                * `tests.py`
+                * `views.py`
                 * `__init__.py`
 
 1. **INFO:** Start development server to test application functionality:
@@ -105,7 +118,7 @@
 
             You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
             Run 'python manage.py migrate' to apply them.
-            September 17, 2022 - 21:11:23
+            September 17, 2022 - 21:26:21
             Django version 4.0, using settings 'the_project.settings'
             Starting development server at http://127.0.0.1:8000/
             Quit the server with CTRL-BREAK.
@@ -126,9 +139,23 @@
     * Keystroke, in terminal:
         * `<Ctrl+C>`
 
-1. Proceed to [Create a Django App](./04_create_django_app.md)
+1. **ACTION:** Add an entry for the `AppConfig` of our app `the_app` to the `INSTALLED_APPS` attribute of [`the_project/settings.py`](../the_project/settings.py):
+    * Our `AppConfig` is `TheAppConfig` in [`the_app/apps.py`](../the_app/apps.py).
+        <details>
+        <summary>Sample <code>INSTALLED_APPS</code> contents addition in <code>the_project/settings.py</code>:</summary>
+
+            INSTALLED_APPS = [
+                #...
+                'the_app.apps.TheAppConfig',
+                #...
+            ]
+        </details>
+
+1. **INFO:** We now have a Django starter with a Django Project and a Django App. We will now add the Django Admin Documentation Generater. This application will allow viewing additional general information about Django as well as information specific to our additional application functionality.
+
+1. Proceed to [Add The Django Admin Documentation Generater]
 
 
 ## Repository Links:
-* Back to [Create `pipenv` Virtual Environment](./02_create_virtual_environment.md)
+* Back to [Create a Django Project](./03_create_django_project.md)
 * Back to Repository [`README.md`](../README.md).
