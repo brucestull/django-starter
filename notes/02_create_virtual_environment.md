@@ -18,6 +18,10 @@
 
 ## Process:
 
+1. **ACTION:** Start in directory which will be the root of our project:
+    * Sample directory location:
+        * `C:\Users\Bruce\Programming\django-starter\`
+
 1. **INFO:** Verify currently installed python packages:
     * `pip list`
         <details>
@@ -252,6 +256,7 @@
         </details>
 
 1. **ACTION:** Proceed to [Create a Django Project](./03_create_django_project.md)
+
 
 ## Repository Links:
 * Back to [How to create this `django-starter` repository](./01_how_to_create_this_repository.md)

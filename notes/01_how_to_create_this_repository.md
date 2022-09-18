@@ -17,7 +17,6 @@
     * Sample directory location:
         * `C:\Users\Bruce\Programming\django-starter\`
 
-
 1. **INFO:** Examine the current directory structure:
     * `tree /f /a`
         * Sample output:

@@ -24,4 +24,5 @@
 ## Process:
 1. [How to create this `django-starter` repository](./notes/01_how_to_create_this_repository.md)
 1. [Create `pipenv` Virtual Environment](./notes/02_create_virtual_environment.md)
+1. [Create a Django Project](./notes/03_create_django_project.md)
 
