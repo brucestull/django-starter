@@ -132,7 +132,7 @@
 
         app_name = 'the_app'
         urlpatterns = [
-            path('', TemplateView. as_view(template_name='index.html'), name='index'),
+            path('', TemplateView.as_view(template_name='index.html'), name='index'),
         ]
         ```
 
@@ -145,7 +145,7 @@
     * [`the_app/templates/index.html`](../the_app/templates/index.html)
     * Sample [`the_app/templates/index.html`](../the_app/templates/index.html) contents:
         ```
-        <h1><code>the_app</code>'s Index Page</h1>
+        <h1><code>the_app</code>'s (<code>the_app/templates/index.html</code>) Index Page</h1>
         ```
 
 1. **INFO:** Open internet browser to server root to verify web page loads:

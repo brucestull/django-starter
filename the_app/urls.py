@@ -4,5 +4,5 @@ from django.views.generic.base import TemplateView
 
 app_name = 'the_app'
 urlpatterns = [
-    path('', TemplateView. as_view(template_name='index.html'), name='index'),
+    path('', TemplateView.as_view(template_name='index.html'), name='index'),
 ]
