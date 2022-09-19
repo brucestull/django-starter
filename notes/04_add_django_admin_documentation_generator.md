@@ -56,13 +56,25 @@
         ]
     </details>
 
-1. **ACTION:** Add a `path` (`urlpattern`) for the Django Admin Documentation Generator app to the `urlpatterns` variable of [](../the_project/urls.py):
+1. **ACTION:** Add a `path` (`urlpattern`) for the Django Admin Documentation Generator app to the `urlpatterns` variable of [`the_project/urls.py`](../the_project/urls.py):
     * Add import for `include` from `django.urls`.
     * Add `path` function with following arguments:
         * route: `'admin/doc/'`
         * view: `include()`
             * Add the following arguments to `include()`:
                 * module: `'django.contrib.admindocs.urls'`
+    <details>
+    <summary>Sample addition to <code>the_project/urls.py</code>:</summary>
+
+      from django.urls import include
+
+      urlpatterns = [
+          #...
+          path('admin/doc/', include('django.contrib.admindocs.urls')),
+          #...
+      ]
+    </details>
+
 
 1. **ACTION:** Install `docutils` using `pipenv`:
     * `pipenv install docutils==0.19`
