@@ -11,12 +11,6 @@
     * [Django Best Practices: Template Structure - learndjango.com](https://learndjango.com/tutorials/template-structure)
     * [Configuring Django Templates - djangocentral.com](https://djangocentral.com/configuring-django-templates/)
 
-## Concepts:
-* To create an effective Django webpage, we need the following:
-    1. URL: Will be created in []
-    1. View: Will be created in []
-    1. Template: Will be created in []
-
 ## `django-starter` Repository links:
 * Repository [`README.md`](../README.md)
 
@@ -57,6 +51,12 @@
         </details>
 
 1. **INFO:** We can start the development server before we proceed to add more functionality. The development server will update as we change code. The server may crash on occasion, but we can just restart the development server in that situation.
+    * To restart the development server:
+        1. Stop the development server:
+            * Keystroke, in terminal:
+                * `<Ctrl+C>`
+        1. Restart the development server:
+            * `python .\manage.py runserver`
 
 1. **ACTION:** Start the development server:
     * `python .\manage.py runserver`
@@ -86,66 +86,58 @@
         [18/Sep/2022 05:38:06] "GET / HTTP/1.1" 404 2174
         ```
 
-1. **INFO:** We will first create a URL route:
-    * We will review console output as we build the out the Django route, view, and then template.
+1. **INFO:** We will first create the template which we want to display.
 
-1. **INFO:** In order to use the application `the_app`s URLs configuration (which we will create soon), we will need to add a route to the project `the_project`s URLs configuration for the `the_app`s URLs configuration.
+1. **ACTION:** Create a [`templates`](../templates/) directory in project root.
+    * This directory will contain the template we build for the Index page.
 
-1. **ACTION:** Modify the project [`the_project/urls.py`](../the_project/urls.py) file as follows:
-    * This `urlpattern` will route HTTP requests for the server root to the application `the_app`'s URLs configuration.
-    * Add an element to the `urlpatterns` list variable:
-        * This element will use Django's `path()` function with the following arguments:
+1. **ACTION:** Create a template `index.html` in the [`templates`](../templates/) directory:
+    * [`templates/index.html`](../templates/index.html)
+    * Sample `index.html` contents:
+        ```
+        <h1><code>PROJECT_ROOT</code>'s (<code>templates/index.html</code>) Page</h1>
+        ```
+
+1. **INFO:** We now need to create a mapping of the URL route to render the template. This mapping will occur in the project root URL configuration file [`the_project/urls.py`](../the_project/urls.py).
+
+1. **ACTION:** Modify the project root URL configuration file [`the_project/urls.py`](../the_project/urls.py):
+    * Add import of `TemplateView` from `django.views.generic.base`.
+    * Add a `urlpattern` to the `urlpatterns` list by using the `path()` function:
+        * The `path()` function arguments are:
             * route: `''`
-            * view: `include()`
-                * The `include()` function will have the following argument:
-                    * module: `the_app.urls`
-    * Sample `urlpatterns` addition:
+            * view: TemplateView.as_view():
+                * The `TemplateView.as_view()` argument is:
+                    * `template_name='index.html'`
+                        * This kwarg tells Django to render the `index.html` template we created above.
+            * name: `name='project_index'`
+    * Sample additions to [`the_project/urls.py](../the_project/urls.py):
         ```
-        urlpatterns = [
-            #...
-            path('', include('the_app.urls')),
-            #...
-        ]
-        ```
-
-1. **ACTION:** Create a URL configuration file [`urls.py`](../the_app/urls.py) in the [`the_app`](../the_app/) directory.
-
-1. **ACTION:** Modify the [`urls.py`](../the_app/urls.py) file as follows:
-    1. Add import for `path` from `django.urls`.
-    1. Add import for `TemplateView` from `django.views.generic.base`.
-    1. Add a variable `app_name` to hold the name of the application.
-        * `app_name = 'the_app'`
-    1. Create a `urlpatterns` variable:
-        * The `urlpatterns` variable will be a list of `urlpattern`s.
-        * We will use the Django `path()` function with the following arguments:
-            * route: `''`
-            * view: `TemplateView.as_view()`
-                * Argument for `TemplateView.as_view()` will be:
-                    * kwarg: `template_name='index.html'`
-                        * This template `index.html` will be created soon in another step.
-            * name: `name='index'`
-    * Sample [`the_app/urls.py`](../the_app/urls.py) contents:
-        ```
-        from django.urls import path
+        #...
         from django.views.generic.base import TemplateView
+        #...
 
-
-        app_name = 'the_app'
         urlpatterns = [
-            path('', TemplateView.as_view(template_name='index.html'), name='index'),
+            #...
+            path('', TemplateView.as_view(template_name='index.html'), name='project_index'),
+            #...
         ]
         ```
 
-1. **INFO:** Since we are using `TemplateView`, we do not need to make our own `view` function. Django will render the template which we specify by `template_name` above.
+1. **INFO:** We now need to tell Django where to find our templates. This is done in the `TEMPLATES` constant of [`the_project/settings.py`](../the_project/settings.py).
 
-1. **ACTION:** Create a `templates` directory in [`the_app`](../the_app/):
-    * [`the_app/templates`](../the_app/templates/)
-
-1. **ACTION:** Create a template `index.html` in the [`the_app/templates/`](../the_app/templates/) directory:
-    * [`the_app/templates/index.html`](../the_app/templates/index.html)
-    * Sample [`the_app/templates/index.html`](../the_app/templates/index.html) contents:
+1. **ACTION:** Add a value for the `'DIRS'` key in the `TEMPLATES` constant of [`the_project/settings.py`](../the_project/settings.py):
+    * We do this so that Django knows where we are creating a non-standard templates directory location. `templates` directories are typically created in the application directories. See [Django Best Practices: Template Structure - learndjango.com](https://learndjango.com/tutorials/template-structure)
+    * The value for the `'DIRS'` key will be:
+        * `[os.path.join(BASE_DIR, 'templates')]`
+    * Sample addition:
         ```
-        <h1><code>the_app</code>'s (<code>the_app/templates/index.html</code>) Index Page</h1>
+        TEMPLATES = [
+            {
+                #...
+                'DIRS': [os.path.join(BASE_DIR, 'templates')],
+                #...
+            },
+        ]
         ```
 
 1. **INFO:** Open internet browser to server root to verify web page loads:
@@ -153,30 +145,30 @@
 
 1. **INFO:** The `index` page should load now, we can proceed to add a few troubleshooting links to the index page so we can use them as we build out our application.
 
-1. **ACTION:** Add a link for Django Admin Interface to [`the_app/templates/index.html`](../the_app/templates/index.html):
+1. **ACTION:** Add a link for Django Admin Interface to [`templates/index.html`](../templates/index.html):
     * Sample addition:
         ```
         <h2>Development Links:</h2>
         <a href="/admin/" target="_blank">Django Admin Interface</a><br>
         ```
 
-1. **ACTION:** Add a link for the Django Admin Documentation interface to [`the_app/templates/index.html`](../the_app/templates/index.html):
+1. **ACTION:** Add a link for the Django Admin Documentation interface to [`templates/index.html`](../templates/index.html):
     * Sample addition:
         ```
         <a href="/admin/doc/" target="_blank">Django Admin Documentation</a><br>
         ```
 
-1. **INFO:** Open an internet browser to the server root and test out the links we just added to the template [`the_app/templates/index.html`](../the_app/templates/index.html).
+1. **INFO:** Open an internet browser to the server root and test out the links we just added to the template [`templates/index.html`](../templates/index.html).
     * http://localhost:8000/
 
-1. **INFO:** We now have a basic Django project and application. That application has a webpage which has links to Django Admin Interface and Django Admin Documentation. This repository can be used to create new Django applications and compare the contents of the new application to this repository.
+1. **INFO:** We now have a basic Django project with the Django Admin Documentation Interface. This project has a webpage which has links to Django Admin Interface and Django Admin Documentation. This repository can be used to create new Django applications and compare the contents of the new application to this repository.
 
 1. Create a project:
-    * Proceed to [Create a Project Fork to Compare to this Repository](./07f_fork_this_repository.md)
+    * Proceed to [Create a Project Fork to Compare to this Repository](./06f_fork_this_repository.md)
     * **AND/OR**
-    * Proceed to [Clone this Repository](./07c_clone_this_repository.md)
+    * Proceed to [Clone this Repository](./06c_clone_this_repository.md)
 
 
 ## Repository Links:
-* Back to [Add The Django Admin Documentation Generater](./05_add_django_admin_documentation_generator.md)
+* Back to [Add The Django Admin Documentation Generater](./04_add_django_admin_documentation_generator.md)
 * Back to Repository [`README.md`](../README.md).

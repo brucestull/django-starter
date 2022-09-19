@@ -82,6 +82,7 @@
             PS C:\Users\Bruce\Programming\django-starter>
         </details>
     * NOTES:
+        * [Creating a project - docs.djangoproject.com](https://docs.djangoproject.com/en/4.0/intro/tutorial01/#creating-a-project) provides a decent explanation of these files.
         * New file: `manage.py`
         * New directory `the_project`:
             * New files in `the_project`:
@@ -125,7 +126,9 @@
     * Keystroke, in terminal:
         * `<Ctrl+C>`
 
-1. Proceed to [Create a Django App](./04_create_django_app.md)
+1. **INFO:** We now have a Django starter with a Django Project. We will now add the Django Admin Documentation Generater. This application will allow viewing additional general information about Django as well as information specific to our additional application functionality.
+
+1. **ACTION:** Proceed to [Add The Django Admin Documentation Generater](./04_add_django_admin_documentation_generator.md)
 
 
 ## Repository Links:

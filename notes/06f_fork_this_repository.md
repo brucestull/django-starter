@@ -26,5 +26,5 @@
 
 
 ## Repository Links:
-* Back to [Add Index Page](./06_add_index_page.md)
+* Back to [Add Index Page](./05_add_index_page.md)
 * Back to Repository [`README.md`](../README.md).
