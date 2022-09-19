@@ -66,13 +66,13 @@
     <details>
     <summary>Sample addition to <code>the_project/urls.py</code>:</summary>
 
-      from django.urls import include
+        from django.urls import include
 
-      urlpatterns = [
-          #...
-          path('admin/doc/', include('django.contrib.admindocs.urls')),
-          #...
-      ]
+        urlpatterns = [
+            #...
+            path('admin/doc/', include('django.contrib.admindocs.urls')),
+            #...
+        ]
     </details>
 
 
