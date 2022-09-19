@@ -127,10 +127,14 @@
 
 1. **ACTION:** Add a value for the `'DIRS'` key in the `TEMPLATES` constant of [`the_project/settings.py`](../the_project/settings.py):
     * We do this so that Django knows where we are creating a non-standard templates directory location. `templates` directories are typically created in the application directories. See [Django Best Practices: Template Structure - learndjango.com](https://learndjango.com/tutorials/template-structure)
+    * Import `os` so we can use it to specify location of the `templates` directory programatically.
     * The value for the `'DIRS'` key will be:
         * `[os.path.join(BASE_DIR, 'templates')]`
     * Sample addition:
         ```
+        #...
+        import os
+        #...
         TEMPLATES = [
             {
                 #...
