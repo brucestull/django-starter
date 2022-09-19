@@ -35,7 +35,7 @@
             
             PS C:\Users\Bruce\Programming\django-starter>
             ```
-        * The current directory contains only `git`-related files and a `notes` directory for markdown documenentation files.
+        * The current directory contains only `git`-related files and a `notes` directory for markdown documentation files.
 
 1. **ACTION:** Proceed to [Create `pipenv` Virtual Environment](./02_create_virtual_environment.md)
 
