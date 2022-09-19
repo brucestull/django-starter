@@ -4,11 +4,13 @@
 
 ### `pipenv`:
 * `pipenv install`
+    * Create a `pipenv` virtual environment for the current directory.
 * `pipenv install django==4.0`
 * `pipenv install django==4.1`
 * `pipenv install docutils==0.19`
 * `pipenv shell`
 * `exit`
+    * Exit the current `pipenv` virtual environment.
 
 ### `pip`:
 * `pip list`
