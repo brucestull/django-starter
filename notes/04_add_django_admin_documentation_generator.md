@@ -57,6 +57,7 @@
     </details>
 
 1. **ACTION:** Add a `path` (`urlpattern`) for the Django Admin Documentation Generator app to the `urlpatterns` variable of [`the_project/urls.py`](../the_project/urls.py):
+    * Make sure to put this `urlpattern` before the URL route for `admin`.
     * Add import for `include` from `django.urls`.
     * Add `path` function with following arguments:
         * route: `'admin/doc/'`
@@ -64,7 +65,7 @@
             * Add the following arguments to `include()`:
                 * module: `'django.contrib.admindocs.urls'`
     <details>
-    <summary>Sample addition to <code>the_project/urls.py</code>:</summary>
+    <summary>Sample modification of <code>the_project/urls.py</code>:</summary>
 
         from django.urls import include
 
@@ -72,6 +73,7 @@
             #...
             path('admin/doc/', include('django.contrib.admindocs.urls')),
             #...
+            path('admin/', admin.site.urls),
         ]
     </details>
 
