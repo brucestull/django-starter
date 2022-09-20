@@ -12,6 +12,9 @@
 
 
 ## Process:
+1. **ACTION:** Create a local git repository:
+    * Sample repository name is `django-starter`.
+
 1. **ACTION:** Start in directory which will be the root of our project:
     * Sample directory location:
         * `C:\Users\Bruce\Programming\django-starter\`
@@ -33,7 +36,11 @@
             
             PS C:\Users\Bruce\Programming\django-starter>
             ```
-        * The current sample directory contains only the `README.md` for this repository and a `notes` directory for markdown documentation files. Your repository may contain other files such as a `.gitignore` or `LICENSE`. These are related to the repository but do not affect the code.
+        * The current sample directory contains only the `README.md` for this repository and a `notes` directory for markdown documentation files.
+            * There is another directory, called `.git`, which may be hidden, in the current directory. This is the `git` configuration file.
+            * `README.md` is a standard file contained in most git repositories.
+            * The `notes` directory is created by the author to contain the markdown documentation files.
+            * Your repository may contain other files such as a `.gitignore` or `LICENSE`. These are related to the repository but do not affect the code.
 
 1. **ACTION:** Proceed to [Create `pipenv` Virtual Environment](./02_create_virtual_environment.md)
 
