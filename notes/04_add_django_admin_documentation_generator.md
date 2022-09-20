@@ -46,15 +46,14 @@
         </details>
 
 1. **ACTION:** Add an application `django.contrib.admindocs` to the `INSTALLED_APPS` variable of [`the_project/settings.py`](../the_project/settings.py):
-    <details>
-    <summary>Sample <code>INSTALLED_APPS</code> addition in <code>the_project/settings.py</code>:</summary>
-
+    * Sample addition of a list item to `INSTALLED_APPS` constant in `the_project/settings.py`:
+        ```
         INSTALLED_APPS = [
             #...
             'django.contrib.admindocs',
             #...
         ]
-    </details>
+        ```
 
 1. **ACTION:** Add a `path` (`urlpattern`) for the Django Admin Documentation Generator app to the `urlpatterns` variable of [`the_project/urls.py`](../the_project/urls.py):
     * Make sure to put this `urlpattern` before the URL route for `admin`.
@@ -64,10 +63,10 @@
         * view: `include()`
             * Add the following arguments to `include()`:
                 * module: `'django.contrib.admindocs.urls'`
-    <details>
-    <summary>Sample modification of <code>the_project/urls.py</code>:</summary>
-
+    * Sample additions to `the_project/urls.py`:
+        #...
         from django.urls import include
+        #...
 
         urlpatterns = [
             #...
@@ -75,7 +74,6 @@
             #...
             path('admin/', admin.site.urls),
         ]
-    </details>
 
 
 1. **ACTION:** Install `docutils` using `pipenv`:
@@ -196,6 +194,23 @@
               ================================ 0/0 - 00:00:00
             PS C:\Users\Bruce\Programming\django-starter>
         </details>
+
+1. **INFO:** Examine the `pipenv` virtual environment's packages:
+    * `pip list`
+        ```
+        PS C:\Users\Bruce\Programming\django-starter> pip list
+        Package    Version
+        ---------- -------
+        asgiref    3.5.2
+        Django     4.0
+        docutils   0.19
+        pip        22.2.2
+        setuptools 65.2.0
+        sqlparse   0.4.2
+        tzdata     2022.2
+        wheel      0.37.1
+        PS C:\Users\Bruce\Programming\django-starter>
+        ```
 
 1. **ACTION:** Perform project database migration:
     * `python .\manage.py migrate`
