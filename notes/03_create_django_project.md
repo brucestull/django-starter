@@ -66,7 +66,7 @@
             |
             +---notes
             |       00_useful_commands_and_links.md
-            |       01_how_to_create_this_repository.md
+            |       01_create_repository_for_project.md
             |       02_create_virtual_environment.md
             |       03_create_django_project.md
             |

@@ -122,7 +122,7 @@
             |
             \---notes
                     00_useful_commands_and_links.md
-                    01_how_to_create_this_repository.md
+                    01_create_repository_for_project.md
                     02_create_virtual_environment.md
 
             PS C:\Users\Bruce\Programming\django-starter>
@@ -254,5 +254,5 @@
 
 
 ## Repository Links:
-* Back to [How to create this `django-starter` repository](./01_how_to_create_this_repository.md)
+* Back to [Create a repository for the project](./01_create_repository_for_project.md)
 * Back to Repository [`README.md`](../README.md).

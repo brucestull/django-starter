@@ -1,4 +1,4 @@
-# How to create this `django-starter` repository
+# Create a repository for the project
 
 ## Resources:
 * [Web application to create `.gitignore` - www.toptal.com](https://www.toptal.com/developers/gitignore/)
@@ -31,7 +31,7 @@
             |
             \---notes
                     00_useful_commands_and_links.md
-                    01_how_to_create_this_repository.md
+                    01_create_repository_for_project.md
                     02_create_virtual_environment.md
             
             PS C:\Users\Bruce\Programming\django-starter>
