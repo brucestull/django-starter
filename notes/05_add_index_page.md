@@ -110,7 +110,7 @@
                     * `template_name='index.html'`
                         * This kwarg tells Django to render the `index.html` template we created above.
             * name: `name='project_index'`
-    * Sample additions to [`the_project/urls.py](../the_project/urls.py):
+    * Sample additions to [`the_project/urls.py`](../the_project/urls.py):
         ```
         #...
         from django.views.generic.base import TemplateView

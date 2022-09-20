@@ -47,7 +47,7 @@
 
 1. **ACTION:** Add an application `django.contrib.admindocs` to the `INSTALLED_APPS` variable of [`the_project/settings.py`](../the_project/settings.py):
     <details>
-    <summary>Sample <code>INSTALLED_APPS</code> contents in <code>the_project/settings.py</code>:</summary>
+    <summary>Sample <code>INSTALLED_APPS</code> addition in <code>the_project/settings.py</code>:</summary>
 
         INSTALLED_APPS = [
             #...
@@ -251,24 +251,18 @@
             Performing system checks...
 
             System check identified no issues (0 silenced).
-
-            You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
-            Run 'python manage.py migrate' to apply them.
-            September 17, 2022 - 21:26:21
+            September 20, 2022 - 03:14:02
             Django version 4.0, using settings 'the_project.settings'
             Starting development server at http://127.0.0.1:8000/
             Quit the server with CTRL-BREAK.
         </details>
-    * Test the following two functions:
-        * Django Admin Interface.
-        * Djange Admin Documentation Generator.
 
 1. **INFO:** Open internet browser to server address:
     * http://localhost:8000/admin/
     * NOTES:
         * Author is using server root http://localhost:8000/ since since it usually maps to http://127.0.0.1:8000/ and is easier to link in notes.
 
-1. **INFO:** Log in to The Django Admin Interface and explore it's functionality as well as the Admin Documentation Generator:
+1. **INFO:** Log in to The Django Admin Interface and explore it's functionality as well as the Django Admin Documentation:
     * Sample URLs for various functions:
         * Server Root:
             * Currently fails since we don't have a route and URLs for it.
@@ -281,6 +275,10 @@
             * http://localhost:8000/admin/doc/filters/
             * http://localhost:8000/admin/doc/models/
             * http://localhost:8000/admin/doc/models/auth.user/ 
+
+1. **INFO:** Stop the development server:
+    * Keystroke, in terminal:
+        * `<Ctrl+C>`
 
 1. **INFO:** We now have a Django starter which has a basic Django Project and the Django Admin Documentation Generator. We will now add a simple `index` page for some useful links.
 
