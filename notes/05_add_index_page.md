@@ -154,8 +154,9 @@
 
 1. **INFO:** Examine directory structure:
     * `tree /f /a`
-        * Sample output:
-            ```
+        <details>
+        <summary>Sample output:</summary>
+
             PS C:\Users\Bruce\Programming\django-starter> tree /f /a
             Folder PATH listing for volume OS
             Volume serial number is CC00-DD12
@@ -179,7 +180,7 @@
                     __init__.py
 
             PS C:\Users\Bruce\Programming\django-starter>
-            ```
+        </details>
 
 1. **INFO:** We now need to create a mapping of the URL route to render the template. This mapping will occur in the project root URL configuration file [`the_project/urls.py`](../the_project/urls.py).
 
