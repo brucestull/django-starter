@@ -101,8 +101,8 @@
 1. **INFO:** We now need to create a mapping of the URL route to render the template. This mapping will occur in the project root URL configuration file [`the_project/urls.py`](../the_project/urls.py).
 
 1. **ACTION:** Modify the project root URL configuration file [`the_project/urls.py`](../the_project/urls.py):
-    * Add import of `TemplateView` from `django.views.generic.base`.
-    * Add a `urlpattern` to the `urlpatterns` list by using the `path()` function:
+    1. Add import of `TemplateView` from `django.views.generic.base`.
+    1. Add a `urlpattern` to the `urlpatterns` list by using the `path()` function:
         * The `path()` function arguments are:
             * route: `''`
             * view: TemplateView.as_view():
@@ -127,8 +127,8 @@
 
 1. **ACTION:** Add a value for the `'DIRS'` key in the `TEMPLATES` constant of [`the_project/settings.py`](../the_project/settings.py):
     * We do this so that Django knows where we are creating a non-standard templates directory location. `templates` directories are typically created in the application directories. See [Django Best Practices: Template Structure - learndjango.com](https://learndjango.com/tutorials/template-structure)
-    * Import `os` so we can use it to specify location of the `templates` directory programatically.
-    * The value for the `'DIRS'` key will be:
+    1. Import `os` so we can use it to specify location of the `templates` directory programatically.
+    1. Add a list for the `'DIRS'` key:
         * `[os.path.join(BASE_DIR, 'templates')]`
     * Sample addition:
         ```
