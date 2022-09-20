@@ -254,5 +254,5 @@
 
 
 ## Repository Links:
-* Back to [Create a repository for the project](./01_create_repository_for_project.md)
+* Back to [Create a git repository for the project](./01_create_repository_for_project.md)
 * Back to Repository [`README.md`](../README.md).

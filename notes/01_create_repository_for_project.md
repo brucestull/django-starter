@@ -1,7 +1,8 @@
-# Create a repository for the project
+# Create a git repository for the project
 
 ## Resources:
 * [Web application to create `.gitignore` - www.toptal.com](https://www.toptal.com/developers/gitignore/)
+* [Follow this Hello World exercise to get started with GitHub - docs.github.com](https://docs.github.com/en/get-started/quickstart/hello-world)
 
 ## `django-starter` Repository links:
 * Repository [`README.md`](../README.md)
@@ -12,8 +13,9 @@
 
 
 ## Process:
-1. **ACTION:** Create a git repository:
+1. **ACTION:** Create a git repository and clone it to local:
     * Sample local repository directory is `django-starter`.
+    * You can `git add`, `git commit`, and `git push` as often as you prefer.
 
 1. **ACTION:** Start in directory which will be the root of our project:
     * Sample directory location:
@@ -27,20 +29,20 @@
             Folder PATH listing for volume OS
             Volume serial number is CC00-DD12
             C:.
-            |   README.md
-            |
-            \---notes
-                    00_useful_commands_and_links.md
-                    01_create_repository_for_project.md
-                    02_create_virtual_environment.md
-            
+                .gitignore
+                LICENSE
+                README.md
+
+            No subfolders exist
+
             PS C:\Users\Bruce\Programming\django-starter>
             ```
-        * The current sample directory contains only the `README.md` for this repository and a `notes` directory for markdown documentation files.
-            * There is another directory, called `.git`, which may be hidden, in the current directory. This is the `git` configuration file.
-            * `README.md` is a standard file contained in most git repositories.
-            * The `notes` directory is created by the author to contain the markdown documentation files.
-            * Your repository may contain other files such as a `.gitignore` or `LICENSE`. These are related to the repository but do not affect the code.
+        * The current sample directory contains three visible files and one hidden directory. These are git-related or git configuration files:
+            * `.git` directory is hidden.
+            * `.gitignore`
+            * `LICENSE`
+            * `README.md`
+        * You directory may have different current files depending on how you started your git repository.
 
 1. **ACTION:** Proceed to [Create `pipenv` Virtual Environment](./02_create_virtual_environment.md)
 

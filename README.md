@@ -23,7 +23,7 @@
 
 
 ## Process:
-1. [Create a repository for the project](./notes/01_create_repository_for_project.md)
+1. [Create a git repository for the project](./notes/01_create_repository_for_project.md)
 1. [Create `pipenv` Virtual Environment](./notes/02_create_virtual_environment.md)
 1. [Create a Django Project](./notes/03_create_django_project.md)
 1. [Add The Django Admin Documentation Generater](./notes/04_add_django_admin_documentation_generator.md)
