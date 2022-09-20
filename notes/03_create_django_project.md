@@ -52,23 +52,18 @@
     
 1. **INFO:** Examine current directory structure:
     * `tree /f /a`
-        <details>
-        <summary>Sample output:</summary>
-
+        * Sample output:
+            ```
             PS C:\Users\Bruce\Programming\django-starter> tree /f /a
             Folder PATH listing for volume OS
             Volume serial number is CC00-DD12
             C:.
+            |   .gitignore
+            |   LICENSE
             |   manage.py
             |   Pipfile
             |   Pipfile.lock
             |   README.md
-            |
-            +---notes
-            |       00_useful_commands_and_links.md
-            |       01_create_repository_for_project.md
-            |       02_create_virtual_environment.md
-            |       03_create_django_project.md
             |
             \---the_project
                     asgi.py
@@ -78,7 +73,8 @@
                     __init__.py
 
             PS C:\Users\Bruce\Programming\django-starter>
-        </details>
+            ```
+
     * NOTES:
         * [Creating a project - docs.djangoproject.com](https://docs.djangoproject.com/en/4.0/intro/tutorial01/#creating-a-project) provides a decent explanation of these files.
         * New file: `manage.py`
@@ -92,9 +88,8 @@
 
 1. **INFO:** Start development server to test application functionality:
     * `python .\manage.py runserver`
-        <details>
-        <summary>Sample output:</summary>
-
+        * Sample output:
+            ```
             PS C:\Users\Bruce\Programming\django-starter> python .\manage.py runserver
             Watching for file changes with StatReloader
             Performing system checks...
@@ -107,7 +102,7 @@
             Django version 4.0, using settings 'the_project.settings'
             Starting development server at http://127.0.0.1:8000/
             Quit the server with CTRL-BREAK.
-        </details>
+            ```
 
 1. **INFO:** Open internet browser to server address:
     * http://localhost:8000/
