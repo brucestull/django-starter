@@ -118,7 +118,7 @@
     * Sample text:
         * `The install worked successfully! Congratulations!`
     * Sample image:
-        * INSERT_DJANGO_GREEN_ROCKET_IMAGE_HERE
+        ![Image of Django Green Rocket and associated success text for Django installation](../images/django_green_rocket.png)
 
 1. **INFO:** Stop the development server:
     * Keystroke, in terminal:
