@@ -116,15 +116,14 @@
             Folder PATH listing for volume OS
             Volume serial number is CC00-DD12
             C:.
-            |   Pipfile
-            |   Pipfile.lock
-            |   README.md
-            |
-            \---notes
-                    00_useful_commands_and_links.md
-                    01_create_repository_for_project.md
-                    02_create_virtual_environment.md
-
+                .gitignore
+                LICENSE
+                Pipfile
+                Pipfile.lock
+                README.md
+            
+            No subfolders exist
+            
             PS C:\Users\Bruce\Programming\django-starter>
             ```
     * NOTES:
