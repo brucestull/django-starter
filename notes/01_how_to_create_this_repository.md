@@ -1,7 +1,7 @@
 # How to create this `django-starter` repository
 
 ## Resources:
-
+* [Web application to create `.gitignore` - www.toptal.com](https://www.toptal.com/developers/gitignore/)
 
 ## `django-starter` Repository links:
 * Repository [`README.md`](../README.md)
