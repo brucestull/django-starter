@@ -88,15 +88,62 @@
 
 1. **INFO:** We will first create the template which we want to display.
 
+1. **INFO:** Examine directory structure:
+    * `tree /f /a`
+        * Sample output:
+            ```
+            PS C:\Users\Bruce\Programming\django-starter> tree /f /a
+            Folder PATH listing for volume OS
+            Volume serial number is CC00-DD12
+            C:.
+            |   .gitignore
+            |   db.sqlite3
+            |   LICENSE
+            |   manage.py
+            |   Pipfile
+            |   Pipfile.lock
+            |   README.md
+            |
+            \---the_project
+                    asgi.py
+                    settings.py
+                    urls.py
+                    wsgi.py
+                    __init__.py
+
+            PS C:\Users\Bruce\Programming\django-starter>
+            ```
+
 1. **ACTION:** Create a [`templates`](../templates/) directory in project root.
     * This directory will contain the template we build for the Index page.
 
 1. **INFO:** Examine directory structure:
     * `tree /f /a`
-        * Sample output:
-            ```
+        <details>
+        <summary>Sample output:</summary>
 
-            ```
+            PS C:\Users\Bruce\Programming\django-starter> tree /f /a
+            Folder PATH listing for volume OS
+            Volume serial number is CC00-DD12
+            C:.
+            |   .gitignore
+            |   db.sqlite3
+            |   LICENSE
+            |   manage.py
+            |   Pipfile
+            |   Pipfile.lock
+            |   README.md
+            |
+            +---templates
+            \---the_project
+                    asgi.py
+                    settings.py
+                    urls.py
+                    wsgi.py
+                    __init__.py
+
+            PS C:\Users\Bruce\Programming\django-starter>
+        </details>
 
 1. **ACTION:** Create a template `index.html` in the [`templates`](../templates/) directory:
     * [`templates/index.html`](../templates/index.html)
@@ -104,6 +151,35 @@
         ```
         <h1><code>PROJECT_ROOT</code>'s (<code>templates/index.html</code>) Page</h1>
         ```
+
+1. **INFO:** Examine directory structure:
+    * `tree /f /a`
+        * Sample output:
+            ```
+            PS C:\Users\Bruce\Programming\django-starter> tree /f /a
+            Folder PATH listing for volume OS
+            Volume serial number is CC00-DD12
+            C:.
+            |   .gitignore
+            |   db.sqlite3
+            |   LICENSE
+            |   manage.py
+            |   Pipfile
+            |   Pipfile.lock
+            |   README.md
+            |
+            +---templates
+            |       index.html
+            |
+            \---the_project
+                    asgi.py
+                    settings.py
+                    urls.py
+                    wsgi.py
+                    __init__.py
+
+            PS C:\Users\Bruce\Programming\django-starter>
+            ```
 
 1. **INFO:** We now need to create a mapping of the URL route to render the template. This mapping will occur in the project root URL configuration file [`the_project/urls.py`](../the_project/urls.py).
 
