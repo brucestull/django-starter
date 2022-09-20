@@ -91,6 +91,13 @@
 1. **ACTION:** Create a [`templates`](../templates/) directory in project root.
     * This directory will contain the template we build for the Index page.
 
+1. **INFO:** Examine directory structure:
+    * `tree /f /a`
+        * Sample output:
+            ```
+
+            ```
+
 1. **ACTION:** Create a template `index.html` in the [`templates`](../templates/) directory:
     * [`templates/index.html`](../templates/index.html)
     * Sample `index.html` contents:
@@ -164,6 +171,36 @@
 
 1. **INFO:** Open an internet browser to the server root and test out the links we just added to the template [`templates/index.html`](../templates/index.html).
     * http://localhost:8000/
+
+1. Review directory structure:
+    * `tree /f /a`
+        * Sample output:
+            ```
+            PS C:\Users\Bruce\Programming\django-starter> tree /f /a
+            Folder PATH listing for volume OS
+            Volume serial number is CC00-DD12
+            C:.
+            |   .gitignore
+            |   db.sqlite3
+            |   LICENSE
+            |   manage.py
+            |   Pipfile
+            |   Pipfile.lock
+            |   README.md
+            |
+            +---templates
+            |       index.html
+            |
+            \---the_project
+                    asgi.py
+                    settings.py
+                    urls.py
+                    wsgi.py
+                    __init__.py
+
+            PS C:\Users\Bruce\Programming\django-starter>
+            ```
+    * Note presence of `db.sqlite3`, this is the database file for development purposes. This file was created earlier when we first ran the server, and then it was modified when we ran `python .\manage.py migrate`.
 
 1. **INFO:** We now have a basic Django project with the Django Admin Documentation Interface. This project has a webpage which has links to Django Admin Interface and Django Admin Documentation. This repository can be used to create new Django applications and compare the contents of the new application to this repository.
 
