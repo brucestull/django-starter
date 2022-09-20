@@ -24,8 +24,6 @@
             Folder PATH listing for volume OS
             Volume serial number is CC00-DD12
             C:.
-            |   .gitignore
-            |   LICENSE
             |   README.md
             |
             \---notes
@@ -35,7 +33,7 @@
             
             PS C:\Users\Bruce\Programming\django-starter>
             ```
-        * The current directory contains only `git`-related files and a `notes` directory for markdown documentation files.
+        * The current sample directory contains only the `README.md` for this repository and a `notes` directory for markdown documentation files. Your repository may contain other files such as a `.gitignore` or `LICENSE`. These are related to the repository but do not affect the code.
 
 1. **ACTION:** Proceed to [Create `pipenv` Virtual Environment](./02_create_virtual_environment.md)
 

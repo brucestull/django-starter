@@ -59,8 +59,6 @@
             Folder PATH listing for volume OS
             Volume serial number is CC00-DD12
             C:.
-            |   .gitignore
-            |   LICENSE
             |   manage.py
             |   Pipfile
             |   Pipfile.lock
