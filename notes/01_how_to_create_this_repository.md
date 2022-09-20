@@ -12,8 +12,8 @@
 
 
 ## Process:
-1. **ACTION:** Create a local git repository:
-    * Sample repository name is `django-starter`.
+1. **ACTION:** Create a git repository:
+    * Sample local repository directory is `django-starter`.
 
 1. **ACTION:** Start in directory which will be the root of our project:
     * Sample directory location:
