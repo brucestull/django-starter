@@ -50,6 +50,7 @@
             PS C:\Users\Bruce\Programming\django-starter> django-admin startproject the_project .
             PS C:\Users\Bruce\Programming\django-starter>
         </details>
+    * The `.` in the above command is useful. This part creates the project directory `the_project` in the current directory and also creates the `manage.py` in the current directory. Otherwise, `manage.py` would be inside the directory `the_project`.
     
 1. **INFO:** Examine current directory structure:
     * `tree /f /a`
