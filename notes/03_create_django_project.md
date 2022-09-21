@@ -1,6 +1,7 @@
 # Create a Django Project
 
 ## Resources:
+* [django-admin and manage.py - docs.djangoproject.com](https://docs.djangoproject.com/en/4.0/ref/django-admin/)
 
 ## `django-starter` Repository links:
 * Repository [`README.md`](../README.md)
