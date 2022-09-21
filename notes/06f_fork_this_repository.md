@@ -16,6 +16,18 @@
 
 
 ## Process:
+1. Open internet browser to the site for this repository:
+    * https://github.com/brucestull/django-starter
+
+1. Click the `Fork` button.
+
+1. Choose an `Owner` if needed.
+
+1. Approve or specify `Repository name`.
+
+1. Click `Create fork` button.
+
+1. Clone the repository to your local machine and start adding your own code.
 
 
 

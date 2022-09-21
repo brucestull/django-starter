@@ -27,5 +27,8 @@
 1. [Create a Django Project](./notes/03_create_django_project.md)
 1. [Add The Django Admin Documentation Generater](./notes/04_add_django_admin_documentation_generator.md)
 1. [Add Django Index View](./notes/05_add_index_page.md)
-1. Proceed to [Create a Fork to Compare with this Repository](./notes/06_fork_this_repository.md)
+1. Proceed to next step:
+    * [Create a Fork to Compare with this Repository](./notes/06f_fork_this_repository.md)  
+    **AND/OR**
+    * [Create a Template from this Repository](./notes/06t_template_this_repository.md)
 
