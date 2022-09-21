@@ -2,8 +2,6 @@
 
 ## Resources:
 * [Fork a repo - docs.github.com](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-* [Web application to create `.gitignore` - www.toptal.com](https://www.toptal.com/developers/gitignore/)
-* [Follow this Hello World exercise to get started with GitHub - docs.github.com](https://docs.github.com/en/get-started/quickstart/hello-world)
 
 ## Concepts:
 
