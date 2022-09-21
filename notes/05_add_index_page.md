@@ -114,8 +114,21 @@
             PS C:\Users\Bruce\Programming\django-starter>
             ```
 
-1. **ACTION:** Create a [`templates`](../templates/) directory in project root.
+1. **ACTION:** Create a [`templates`](../templates/) directory in project root directory.
     * This directory will contain the template we build for the Index page.
+    * `New-Item -ItemType 'directory' templates`
+    * Sample output:
+        ```
+        PS C:\Users\Bruce\Programming\django-starter> New-Item -ItemType 'directory' templates
+        
+            Directory: C:\Users\Bruce\Programming\django-starter
+        
+        Mode                 LastWriteTime         Length Name
+        ----                 -------------         ------ ----
+        d----          2022-09-21    04:28                templates
+        
+        PS C:\Users\Bruce\Programming\django-starter>
+        ```
 
 1. **INFO:** Examine directory structure:
     * `tree /f /a`
