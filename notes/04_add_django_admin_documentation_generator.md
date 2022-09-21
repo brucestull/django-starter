@@ -64,6 +64,7 @@
             * Add the following arguments to `include()`:
                 * module: `'django.contrib.admindocs.urls'`
     * Sample additions to `the_project/urls.py`:
+        ```
         #...
         from django.urls import include
         #...
@@ -74,6 +75,7 @@
             #...
             path('admin/', admin.site.urls),
         ]
+        ```
 
 
 1. **ACTION:** Install `docutils` using `pipenv`:
