@@ -295,9 +295,7 @@
 1. **INFO:** We now have a basic Django project with the Django Admin Documentation Interface. This project has a webpage which has links to Django Admin Interface and Django Admin Documentation. This repository can be used to create new Django applications and compare the contents of the new application to this repository.
 
 1. Create a project:
-    * Proceed to [Create a Project Fork to Compare to this Repository](./06f_fork_this_repository.md)
-    * **AND/OR**
-    * Proceed to [Clone this Repository](./06c_clone_this_repository.md)
+    * Proceed to [Create a Fork to Compare with this Repository](./06_fork_this_repository.md)
 
 
 ## Repository Links:

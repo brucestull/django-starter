@@ -1,16 +1,15 @@
-# Clone this Repository
+# Create a Fork to Compare with this Repository
 
 ## Resources:
-
+* [Web application to create `.gitignore` - www.toptal.com](https://www.toptal.com/developers/gitignore/)
+* [Follow this Hello World exercise to get started with GitHub - docs.github.com](https://docs.github.com/en/get-started/quickstart/hello-world)
 
 ## Concepts:
-* To create an effective Django webpage, we need the following:
-    1. URL: Will be created in []
-    1. View: Will be created in []
-    1. Template: Will be created in []
+
 
 ## `django-starter` Repository links:
 * Repository [`README.md`](../README.md)
+* Repository root on GitHub: [https://github.com/brucestull/django-starter](https://github.com/brucestull/django-starter)
 
 ## Tag meanings for this guide:
 * "**ACTION:** " tags are performing code or environment changes.
