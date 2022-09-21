@@ -1,11 +1,10 @@
 # Django Starter
 
 ## What is included:
-* A Django Project: `the_project`
-* A Django App: `the_app`
-* A Django function-based view: `index`
-* The Django Admin Documentation Generater: which uses `docutils`
 * `pipenv` settings files
+* A Django Project: `the_project`
+* The Django Admin Documentation Generater: which uses `docutils`
+* A Django function-based view: `index`
 
 
 ## Notes:
