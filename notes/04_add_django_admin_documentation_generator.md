@@ -56,8 +56,8 @@
         ```
 
 1. **ACTION:** Add a `path` (`urlpattern`) for the Django Admin Documentation Generator app to the `urlpatterns` variable of [`the_project/urls.py`](../the_project/urls.py):
-    * Make sure to put this `urlpattern` before the URL route for `admin`.
     * Add import for `include` from `django.urls`.
+    * Make sure to put this `urlpattern` before the URL route for `admin`.
     * Add `path` function with following arguments:
         * route: `'admin/doc/'`
         * view: `include()`
