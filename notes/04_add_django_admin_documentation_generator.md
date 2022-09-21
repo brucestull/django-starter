@@ -282,7 +282,8 @@
 1. **INFO:** Log in to The Django Admin Interface and explore it's functionality as well as the Django Admin Documentation:
     * Sample URLs for various Django Admin Interface pages:
         * Server Root:
-            * Currently fails since we don't have a route and URLs for it.
+            * http://localhost:8000/
+                * Currently fails since we don't have a route and URLs for it.
         * Django Admin:
             * http://localhost:8000/admin/
             * http://localhost:8000/admin/auth/user/
