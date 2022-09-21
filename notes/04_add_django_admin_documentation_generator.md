@@ -280,7 +280,7 @@
         * Author is using server root http://localhost:8000/ since since it usually maps to http://127.0.0.1:8000/ and is easier to link in notes.
 
 1. **INFO:** Log in to The Django Admin Interface and explore it's functionality as well as the Django Admin Documentation:
-    * Sample URLs for various functions:
+    * Sample URLs for various Django Admin Interface pages:
         * Server Root:
             * Currently fails since we don't have a route and URLs for it.
         * Django Admin:
