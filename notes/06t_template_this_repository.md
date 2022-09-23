@@ -15,3 +15,11 @@
 
 
 ## Process:
+1. Open internet browser to the site for this repository:
+    * https://github.com/brucestull/django-starter
+
+1. Use the GitHub 'Template' feature:
+    * Click the `Use this template` button.
+    * **NOTE:** This experience if different depending on display size.
+
+1. Follow prompts and set fields for your repository.

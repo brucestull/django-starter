@@ -23,7 +23,9 @@
 * `python .\manage.py makemigrations`
 * `python .\manage.py migrate`
 * `python .\manage.py createsuperuser`
-* `python .\manage.py createsuperuser --email admin@email.app --username admin`
+* `python manage.py createsuperuser --email admin@email.app --username admin`
+* Can't have leading `.\` when running command with `heroku run`:
+    * `heroku run python manage.py createsuperuser --email admin@email.app --username admin`
 
 
 ### PowerShell:
